@@ -71,7 +71,6 @@ class ExpandedOrderResolver implements ResolverInterface
         $trackNumbers = [];
 
         $customerId = $context->getUserId();
-        $this->checkCustomerAccount->execute($customerId, $context->getUserType());
 
         $orderId = $args['id'];
         $order = $this->orderRepository->get($orderId);
